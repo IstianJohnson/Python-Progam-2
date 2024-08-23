@@ -1,0 +1,34 @@
+#Manudriven Ptogram in python to add an element , multipal element and 3. Add an element at a specific index number in the list.
+MAG = [55,342,77,99,213]
+while True:
+
+    print("Welcome")
+    print("To Add An Element Press 1 \nTo Add Multiple Elements Press 2 \nTo Add An Element At A Specific Index Number In The List press 3 \nPress 4 To Exit")
+    print(MAG)
+
+    cho = int(input("Enter Your Choice : "))
+
+    if cho == 1:
+        a = input("Enter The Element You Want To Add : ")
+        MAG.append(a)
+        print(MAG)
+
+    elif cho == 2:
+        a = int(input("Enter The Number Of Elements You Want To Add : "))
+        for i in range(0,a):
+            add = input("Enter The Element : ")
+            MAG.append(add)
+        print(MAG)
+
+    elif cho == 3:
+        ele = input("Enetr The Element : ")
+        a = int(input("Enter The Index Number In Which You Want To Place Place The Element : "))
+        MAG.insert(a, ele)
+        print(MAG)
+
+    elif cho == 4:
+        print("Bye Bye")
+        break
+
+    else:
+        print("Wrong Choice ")
